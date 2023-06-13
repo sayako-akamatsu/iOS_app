@@ -16,6 +16,7 @@
 		CEEDEC012A35B74100F9DEE0 /* maegamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC002A35B74100F9DEE0 /* maegamiTests.swift */; };
 		CEEDEC0B2A35B74100F9DEE0 /* maegamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC0A2A35B74100F9DEE0 /* maegamiUITests.swift */; };
 		CEEDEC0D2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC0C2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift */; };
+		CEEDEC202A35D3FA00F9DEE0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CEEDEC062A35B74100F9DEE0 /* maegamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maegamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDEC0A2A35B74100F9DEE0 /* maegamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiUITests.swift; sourceTree = "<group>"; };
 		CEEDEC0C2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */,
 				CEEDEBEE2A35B74100F9DEE0 /* Assets.xcassets */,
 				CEEDEBF32A35B74100F9DEE0 /* Persistence.swift */,
+				CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */,
 				CEEDEBF52A35B74100F9DEE0 /* maegami.xcdatamodeld */,
 				CEEDEBF02A35B74100F9DEE0 /* Preview Content */,
 			);
@@ -266,6 +269,7 @@
 				CEEDEBF42A35B74100F9DEE0 /* Persistence.swift in Sources */,
 				CEEDEBF72A35B74100F9DEE0 /* maegami.xcdatamodeld in Sources */,
 				CEEDEBED2A35B73F00F9DEE0 /* ContentView.swift in Sources */,
+				CEEDEC202A35D3FA00F9DEE0 /* ScannerViewController.swift in Sources */,
 				CEEDEBEB2A35B73F00F9DEE0 /* maegamiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +432,7 @@
 				DEVELOPMENT_TEAM = 27TW2H4RVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +462,7 @@
 				DEVELOPMENT_TEAM = 27TW2H4RVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
