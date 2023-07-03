@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1473F7E5BAC1EFCA8512D0FC /* Pods_maegami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF40D643050E559B04D95F0D /* Pods_maegami.framework */; };
+		32FF7C15261F904B4E578DBC /* Pods_maegami_maegamiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4C4CF5A1D48436F332E0F /* Pods_maegami_maegamiUITests.framework */; };
+		CE2620C62A3A0AE90017D967 /* SpreadSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */; };
 		CEEDEBEB2A35B73F00F9DEE0 /* maegamiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */; };
 		CEEDEBED2A35B73F00F9DEE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */; };
 		CEEDEBEF2A35B74100F9DEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDEBEE2A35B74100F9DEE0 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		CEEDEC0B2A35B74100F9DEE0 /* maegamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC0A2A35B74100F9DEE0 /* maegamiUITests.swift */; };
 		CEEDEC0D2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC0C2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift */; };
 		CEEDEC202A35D3FA00F9DEE0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */; };
+		E4C16BDB51745015B425D177 /* Pods_maegamiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380D6D2A52863119AC67477 /* Pods_maegamiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F4C4CF5A1D48436F332E0F /* Pods_maegami_maegamiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maegami_maegamiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C4EA2CD975CFE487FC007A /* Pods-maegami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegami.release.xcconfig"; path = "Target Support Files/Pods-maegami/Pods-maegami.release.xcconfig"; sourceTree = "<group>"; };
+		6380D6D2A52863119AC67477 /* Pods_maegamiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maegamiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD75EA5CC5D4D2A97CA9317 /* Pods-maegami-maegamiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegami-maegamiUITests.release.xcconfig"; path = "Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D79143E398B0F832DC50703 /* Pods-maegamiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegamiTests.release.xcconfig"; path = "Target Support Files/Pods-maegamiTests/Pods-maegamiTests.release.xcconfig"; sourceTree = "<group>"; };
+		A48A9077845662B40AECE81E /* Pods-maegamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegamiTests.debug.xcconfig"; path = "Target Support Files/Pods-maegamiTests/Pods-maegamiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF40D643050E559B04D95F0D /* Pods_maegami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maegami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B9DE70F00709D46F0D9D52 /* Pods-maegami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegami.debug.xcconfig"; path = "Target Support Files/Pods-maegami/Pods-maegami.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadSheetController.swift; sourceTree = "<group>"; };
+		CE682E9D2A50085900303C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEEDEBE72A35B73F00F9DEE0 /* maegami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maegami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiApp.swift; sourceTree = "<group>"; };
 		CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +64,7 @@
 		CEEDEC0A2A35B74100F9DEE0 /* maegamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiUITests.swift; sourceTree = "<group>"; };
 		CEEDEC0C2A35B74100F9DEE0 /* maegamiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		DC48B3B284CBBAAB7CA92579 /* Pods-maegami-maegamiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegami-maegamiUITests.debug.xcconfig"; path = "Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1473F7E5BAC1EFCA8512D0FC /* Pods_maegami.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C16BDB51745015B425D177 /* Pods_maegamiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FF7C15261F904B4E578DBC /* Pods_maegami_maegamiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CBD300820538CD39B38D22B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4B9DE70F00709D46F0D9D52 /* Pods-maegami.debug.xcconfig */,
+				39C4EA2CD975CFE487FC007A /* Pods-maegami.release.xcconfig */,
+				DC48B3B284CBBAAB7CA92579 /* Pods-maegami-maegamiUITests.debug.xcconfig */,
+				6FD75EA5CC5D4D2A97CA9317 /* Pods-maegami-maegamiUITests.release.xcconfig */,
+				A48A9077845662B40AECE81E /* Pods-maegamiTests.debug.xcconfig */,
+				7D79143E398B0F832DC50703 /* Pods-maegamiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F30ABD787DDB4A027FE5FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF40D643050E559B04D95F0D /* Pods_maegami.framework */,
+				33F4C4CF5A1D48436F332E0F /* Pods_maegami_maegamiUITests.framework */,
+				6380D6D2A52863119AC67477 /* Pods_maegamiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEEDEBDE2A35B73F00F9DEE0 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +125,8 @@
 				CEEDEBFF2A35B74100F9DEE0 /* maegamiTests */,
 				CEEDEC092A35B74100F9DEE0 /* maegamiUITests */,
 				CEEDEBE82A35B73F00F9DEE0 /* Products */,
+				4CBD300820538CD39B38D22B /* Pods */,
+				8F30ABD787DDB4A027FE5FCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +143,13 @@
 		CEEDEBE92A35B73F00F9DEE0 /* maegami */ = {
 			isa = PBXGroup;
 			children = (
+				CE682E9D2A50085900303C10 /* Info.plist */,
 				CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */,
 				CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */,
 				CEEDEBEE2A35B74100F9DEE0 /* Assets.xcassets */,
 				CEEDEBF32A35B74100F9DEE0 /* Persistence.swift */,
 				CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */,
+				CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */,
 				CEEDEBF52A35B74100F9DEE0 /* maegami.xcdatamodeld */,
 				CEEDEBF02A35B74100F9DEE0 /* Preview Content */,
 			);
@@ -143,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEDEC102A35B74100F9DEE0 /* Build configuration list for PBXNativeTarget "maegami" */;
 			buildPhases = (
+				E7AD26647F7C2574172A5109 /* [CP] Check Pods Manifest.lock */,
 				CEEDEBE32A35B73F00F9DEE0 /* Sources */,
 				CEEDEBE42A35B73F00F9DEE0 /* Frameworks */,
 				CEEDEBE52A35B73F00F9DEE0 /* Resources */,
+				69C70959D1FB69571B97F2C0 /* [CP] Embed Pods Frameworks */,
+				A6ECD32EDEA86F8005CDF725 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEDEC132A35B74100F9DEE0 /* Build configuration list for PBXNativeTarget "maegamiTests" */;
 			buildPhases = (
+				12F9129651DDA4AFCCE98D6B /* [CP] Check Pods Manifest.lock */,
 				CEEDEBF82A35B74100F9DEE0 /* Sources */,
 				CEEDEBF92A35B74100F9DEE0 /* Frameworks */,
 				CEEDEBFA2A35B74100F9DEE0 /* Resources */,
@@ -178,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEDEC162A35B74100F9DEE0 /* Build configuration list for PBXNativeTarget "maegamiUITests" */;
 			buildPhases = (
+				3C0A77EE45A3E0FC3A40D46E /* [CP] Check Pods Manifest.lock */,
 				CEEDEC022A35B74100F9DEE0 /* Sources */,
 				CEEDEC032A35B74100F9DEE0 /* Frameworks */,
 				CEEDEC042A35B74100F9DEE0 /* Resources */,
+				3B15D6B7CB6CA31BC7CD3FC5 /* [CP] Embed Pods Frameworks */,
+				6767F60F8425623AE13D434C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +313,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12F9129651DDA4AFCCE98D6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maegamiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B15D6B7CB6CA31BC7CD3FC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C0A77EE45A3E0FC3A40D46E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maegami-maegamiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6767F60F8425623AE13D434C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maegami-maegamiUITests/Pods-maegami-maegamiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C70959D1FB69571B97F2C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6ECD32EDEA86F8005CDF725 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maegami/Pods-maegami-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AD26647F7C2574172A5109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maegami-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEEDEBE32A35B73F00F9DEE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +459,7 @@
 				CEEDEBF72A35B74100F9DEE0 /* maegami.xcdatamodeld in Sources */,
 				CEEDEBED2A35B73F00F9DEE0 /* ContentView.swift in Sources */,
 				CEEDEC202A35D3FA00F9DEE0 /* ScannerViewController.swift in Sources */,
+				CE2620C62A3A0AE90017D967 /* SpreadSheetController.swift in Sources */,
 				CEEDEBEB2A35B73F00F9DEE0 /* maegamiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +613,7 @@
 		};
 		CEEDEC112A35B74100F9DEE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B9DE70F00709D46F0D9D52 /* Pods-maegami.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,12 +623,14 @@
 				DEVELOPMENT_TEAM = 27TW2H4RVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maegami/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,14 +638,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maegami.maegami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CEEDEC122A35B74100F9DEE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C4EA2CD975CFE487FC007A /* Pods-maegami.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,12 +659,14 @@
 				DEVELOPMENT_TEAM = 27TW2H4RVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maegami/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,14 +674,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maegami.maegami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		CEEDEC142A35B74100F9DEE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48A9077845662B40AECE81E /* Pods-maegamiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +706,7 @@
 		};
 		CEEDEC152A35B74100F9DEE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D79143E398B0F832DC50703 /* Pods-maegamiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +727,7 @@
 		};
 		CEEDEC172A35B74100F9DEE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC48B3B284CBBAAB7CA92579 /* Pods-maegami-maegamiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +746,7 @@
 		};
 		CEEDEC182A35B74100F9DEE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD75EA5CC5D4D2A97CA9317 /* Pods-maegami-maegamiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

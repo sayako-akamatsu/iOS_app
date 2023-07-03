@@ -1,0 +1,6 @@
+framework module Pods_maegami_maegamiUITests {
+  umbrella header "Pods-maegami-maegamiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
