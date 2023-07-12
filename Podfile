@@ -9,7 +9,6 @@ target 'maegami' do
 
   # Pods for maegami
   pod 'GoogleSignIn', '5.0.2'
-  pod 'GoogleAPIClientForREST/Sheets', '~> 1.2.1'
 
   target 'maegamiTests' do
     inherit! :search_paths

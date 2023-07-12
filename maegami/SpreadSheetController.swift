@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
 import GoogleSignIn
-import GoogleAPIClientForREST
 
 @MainActor
 class SpreadSheetController: NSObject, ObservableObject, GIDSignInDelegate {
