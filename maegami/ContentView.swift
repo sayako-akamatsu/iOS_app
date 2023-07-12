@@ -76,6 +76,9 @@ struct ContentView: View {
                     }
                 }
             }
+            Text("Googleアカウントへのサインイン時に「このアプリはGoogleで確認されていません」といった警告が出ますが、アカウント情報は本アプリ以外では使用しません。サインインを継続する場合は左下の「詳細」をタップした後、「参加者チェッカー（安全ではないページ）に移動」をタップしてください。")
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             
             if showErrorHarfSize || showErrorNull || showErrorExist || googleError || connectError {
