@@ -13,7 +13,7 @@ struct maegamiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TipsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

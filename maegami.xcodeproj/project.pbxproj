@@ -10,6 +10,13 @@
 		1473F7E5BAC1EFCA8512D0FC /* Pods_maegami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF40D643050E559B04D95F0D /* Pods_maegami.framework */; };
 		32FF7C15261F904B4E578DBC /* Pods_maegami_maegamiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4C4CF5A1D48436F332E0F /* Pods_maegami_maegamiUITests.framework */; };
 		CE2620C62A3A0AE90017D967 /* SpreadSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */; };
+		CE61F30C2A927ACA006ABAE7 /* GoogleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F30B2A927ACA006ABAE7 /* GoogleSignInController.swift */; };
+		CE61F30E2A927FB3006ABAE7 /* GoogleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F30D2A927FB3006ABAE7 /* GoogleSignInView.swift */; };
+		CE61F3102A92819B006ABAE7 /* TipsVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F30F2A92819B006ABAE7 /* TipsVIew.swift */; };
+		CE61F3142A944648006ABAE7 /* SettingSpredSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F3132A944648006ABAE7 /* SettingSpredSheetView.swift */; };
+		CE61F3162A945A9F006ABAE7 /* SettingRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F3152A945A9F006ABAE7 /* SettingRangeView.swift */; };
+		CE61F31A2A948AB2006ABAE7 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F3192A948AB2006ABAE7 /* ScannerView.swift */; };
+		CE61F31E2A94A3FB006ABAE7 /* TipsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61F31D2A94A3FB006ABAE7 /* TipsScrollView.swift */; };
 		CEEDEBEB2A35B73F00F9DEE0 /* maegamiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */; };
 		CEEDEBED2A35B73F00F9DEE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */; };
 		CEEDEBEF2A35B74100F9DEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDEBEE2A35B74100F9DEE0 /* Assets.xcassets */; };
@@ -50,6 +57,13 @@
 		AF40D643050E559B04D95F0D /* Pods_maegami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maegami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B9DE70F00709D46F0D9D52 /* Pods-maegami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maegami.debug.xcconfig"; path = "Target Support Files/Pods-maegami/Pods-maegami.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadSheetController.swift; sourceTree = "<group>"; };
+		CE61F30B2A927ACA006ABAE7 /* GoogleSignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInController.swift; sourceTree = "<group>"; };
+		CE61F30D2A927FB3006ABAE7 /* GoogleSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInView.swift; sourceTree = "<group>"; };
+		CE61F30F2A92819B006ABAE7 /* TipsVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVIew.swift; sourceTree = "<group>"; };
+		CE61F3132A944648006ABAE7 /* SettingSpredSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSpredSheetView.swift; sourceTree = "<group>"; };
+		CE61F3152A945A9F006ABAE7 /* SettingRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRangeView.swift; sourceTree = "<group>"; };
+		CE61F3192A948AB2006ABAE7 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		CE61F31D2A94A3FB006ABAE7 /* TipsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsScrollView.swift; sourceTree = "<group>"; };
 		CE682E9D2A50085900303C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEEDEBE72A35B73F00F9DEE0 /* maegami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maegami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maegamiApp.swift; sourceTree = "<group>"; };
@@ -118,6 +132,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE61F3112A9287C1006ABAE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE61F30D2A927FB3006ABAE7 /* GoogleSignInView.swift */,
+				CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */,
+				CE61F30F2A92819B006ABAE7 /* TipsVIew.swift */,
+				CE61F3132A944648006ABAE7 /* SettingSpredSheetView.swift */,
+				CE61F3152A945A9F006ABAE7 /* SettingRangeView.swift */,
+				CE61F3192A948AB2006ABAE7 /* ScannerView.swift */,
+				CE61F31D2A94A3FB006ABAE7 /* TipsScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE61F3122A9287DF006ABAE7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */,
+				CE61F30B2A927ACA006ABAE7 /* GoogleSignInController.swift */,
+				CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CEEDEBDE2A35B73F00F9DEE0 = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +181,12 @@
 		CEEDEBE92A35B73F00F9DEE0 /* maegami */ = {
 			isa = PBXGroup;
 			children = (
+				CE61F3122A9287DF006ABAE7 /* Controllers */,
+				CE61F3112A9287C1006ABAE7 /* Views */,
 				CE682E9D2A50085900303C10 /* Info.plist */,
 				CEEDEBEA2A35B73F00F9DEE0 /* maegamiApp.swift */,
-				CEEDEBEC2A35B73F00F9DEE0 /* ContentView.swift */,
 				CEEDEBEE2A35B74100F9DEE0 /* Assets.xcassets */,
 				CEEDEBF32A35B74100F9DEE0 /* Persistence.swift */,
-				CEEDEC1F2A35D3FA00F9DEE0 /* ScannerViewController.swift */,
-				CE2620C52A3A0AE90017D967 /* SpreadSheetController.swift */,
 				CEEDEBF52A35B74100F9DEE0 /* maegami.xcdatamodeld */,
 				CEEDEBF02A35B74100F9DEE0 /* Preview Content */,
 			);
@@ -456,11 +493,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEDEBF42A35B74100F9DEE0 /* Persistence.swift in Sources */,
+				CE61F30E2A927FB3006ABAE7 /* GoogleSignInView.swift in Sources */,
+				CE61F3162A945A9F006ABAE7 /* SettingRangeView.swift in Sources */,
+				CE61F31A2A948AB2006ABAE7 /* ScannerView.swift in Sources */,
 				CEEDEBF72A35B74100F9DEE0 /* maegami.xcdatamodeld in Sources */,
 				CEEDEBED2A35B73F00F9DEE0 /* ContentView.swift in Sources */,
+				CE61F3142A944648006ABAE7 /* SettingSpredSheetView.swift in Sources */,
 				CEEDEC202A35D3FA00F9DEE0 /* ScannerViewController.swift in Sources */,
+				CE61F31E2A94A3FB006ABAE7 /* TipsScrollView.swift in Sources */,
 				CE2620C62A3A0AE90017D967 /* SpreadSheetController.swift in Sources */,
+				CE61F3102A92819B006ABAE7 /* TipsVIew.swift in Sources */,
 				CEEDEBEB2A35B73F00F9DEE0 /* maegamiApp.swift in Sources */,
+				CE61F30C2A927ACA006ABAE7 /* GoogleSignInController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

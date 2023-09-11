@@ -3,10 +3,17 @@ import UIKit
 import GoogleSignIn
 
 @MainActor
-class SpreadSheetController: NSObject, ObservableObject, GIDSignInDelegate {
+class SpreadSheetController: NSObject, ObservableObject {
+//    private let googleSignInController: GoogleSignInController // 依存性注入
+//
+//        init(googleSignInController: GoogleSignInController) {
+//            self.googleSignInController = googleSignInController
+//            super.init()
+//        }
     // 定数
     private let apiKey = "AIzaSyD60AqaJKi74U52jQgiA1MNevYA19ltC4s"
     private let baseURL = "https://sheets.googleapis.com/v4/spreadsheets"
+    private let googleSignInController = GoogleSignInController()
     
     // 変数
     private var sheetName = ""
@@ -14,118 +21,98 @@ class SpreadSheetController: NSObject, ObservableObject, GIDSignInDelegate {
     private var enterCellRange = ""
     private var spreadsheetId = ""
     private var accessToken = ""
+    private var signInTimer: Timer?
     // バリデーションエラー
-    @Published private(set) var validationError = false
-    @Published private(set) var validationNullError = false
-    @Published private(set) var validationExistError = false
-    @Published private(set) var validationHalfSizeError = false
+    //@Published private(set) var validationError = false
+    //@Published private(set) var validationNullError = false
+    //@Published private(set) var validationExistError = false
+    //@Published private(set) var validationHalfSizeError = false
     
     @Published private(set) var googleSuccess = false
     @Published private(set) var matchSuccessAlert = false
-    @Published private(set) var apiSuccess = false
+    @Published private(set) var connectSuccess = false
     @Published private(set) var spreadSheetResponse = SpreadSheetResponse(range: "", majorDimension: "", values: [[""]])
     
-    // バリデーションチェック
-    func setValues(URL url:String,Sheet sheet:String ,URLRange urlRange:String ,AttendanceRange attendanceRange:String) throws {
-        // 初期化
-        validationError = false
-        validationNullError = false
-        validationExistError = false
-        validationHalfSizeError = false
-        if url == "" || sheet == "" || urlRange == "" || attendanceRange == "" {
-            validationError = true
-            validationNullError = true
-            return
+
+    func setSpredSheetValues(URL url:String,Sheet sheet:String) async throws {
+        
+        try await connectGoogleSheet(fromURL: url)
+        if connectSuccess {
+            print("API連携成功")
+        } else {
+            print("API連携失敗")
         }
-        guard let spreadsheetId = extractSpreadsheetId(from: url) else {
-            // エラーフラグを立てて処理を終了させる
-            validationError = true
-            validationExistError = true
-            return
-        }
-        // urlRangeが半角英字でない場合にエラーフラグを立てる
-            let urlRangeRegex = try! NSRegularExpression(pattern: "^[A-Za-z]+$")
-            let urlRangeRange = NSRange(location: 0, length: urlRange.utf16.count)
-            if urlRangeRegex.firstMatch(in: urlRange, options: [], range: urlRangeRange) == nil {
-                // エラーフラグを立てて処理を終了させる
-                validationError = true
-                validationHalfSizeError = true
-                return
-            }
-        // attendanceRangeが半角英字でない場合にエラーフラグを立てる
-        let attendanceRangeRegex = try! NSRegularExpression(pattern: "^[A-Za-z]+$")
-        let attendanceRangeRange = NSRange(location: 0, length: attendanceRange.utf16.count)
-        if attendanceRangeRegex.firstMatch(in: attendanceRange, options: [], range: attendanceRangeRange) == nil {
-            // エラーフラグを立てて処理を終了させる
-            validationError = true
-            validationHalfSizeError = true
-            return
-        }
-        self.spreadsheetId = spreadsheetId
         self.sheetName = sheet
-        self.cellRange = "\(urlRange):\(urlRange)"
+        
+    }
+    func setRangeValues(URLRange profileUrlRange:String ,AttendanceRange attendanceRange:String) throws {
+        
+        self.cellRange = "\(profileUrlRange):\(profileUrlRange)"
         self.enterCellRange = attendanceRange
         
     }
-    
-    override init() {
-        super.init()
-        // GoogleSignInの設定
-        GIDSignIn.sharedInstance().clientID = "172373643190-6vba3arlgb1cftgeei5fnkvn5p0e1res.apps.googleusercontent.com"
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().presentingViewController = UIApplication.shared.windows.first?.rootViewController
-        GIDSignIn.sharedInstance()?.scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    }
-    
     // 認証フローの開始
-    func signIn() async {
-        //        if !GIDSignIn.sharedInstance().hasPreviousSignIn() && googleConnect {
-        GIDSignIn.sharedInstance()?.signIn()
-//    }
+    func signIn() {
+        googleSignInController.signIn()
+        accessToken = googleSignInController.getAccessToken()
     }
-    
+
     // 認証フローの終了
     func signOut() {
-        GIDSignIn.sharedInstance()?.signOut()
+        googleSignInController.signOut()
     }
     
-    // GoogleSignInDelegateのメソッド
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?){
-        if let error = error {
-            print("Google認証エラー: \(error.localizedDescription)")
-            self.googleSuccess = false
-            return
-        }
-        
-        // アクセストークンの取得とQRコードの表示
-        if let authentication = user.authentication {
-            print("Google認証成功")
-            self.accessToken = authentication.accessToken
-            self.googleSuccess = true
-            return
-        }
-    }
-    
-    // GoogleSheet疎通確認
     @MainActor
     func connectGoogleSheet(fromURL url: String) async throws {
+        print("url:",url)
         guard let spreadsheetId = extractSpreadsheetId(from: url) else {
             throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
         }
         self.spreadsheetId = spreadsheetId
-        let reqURL = "\(self.baseURL)/\(spreadsheetId)/values/\(sheetName)!\(cellRange)?key=\(apiKey)"
-        
+        print("spreadsheetId:",spreadsheetId)
+        let reqURL = "\(self.baseURL)/\(spreadsheetId)/values/\(sheetName)?key=\(apiKey)"
+        print("reqURL:",reqURL)
         guard let requestURL = URL(string: reqURL) else {
             throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
         }
-        
-        let (data, _) = try await URLSession.shared.data(from: requestURL)
-        let decoder = JSONDecoder()
-        let spreadSheetResponse = try decoder.decode(SpreadSheetResponse.self, from: data)
-        self.spreadSheetResponse = spreadSheetResponse
-        self.apiSuccess = true
-        print("apiSuccess:",apiSuccess)
+        print("reqURL:",requestURL)
+        do {
+            let (data, _) = try await URLSession.shared.data(from: requestURL)
+            let decoder = JSONDecoder()
+            let spreadSheetResponse = try decoder.decode(SpreadSheetResponse.self, from: data)
+            print("spreadSheetResponse",spreadSheetResponse)
+            self.spreadSheetResponse = spreadSheetResponse
+            self.connectSuccess = true
+            print("connectSuccess:",connectSuccess)
+        } catch {
+            print("APIエラー: \(error)")
+            throw error
+        }
     }
+
+//
+//    @MainActor
+//    func connectGoogleSheet(fromURL url: String) async throws {
+//        guard let spreadsheetId = extractSpreadsheetId(from: url) else {
+//            throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
+//        }
+//        self.spreadsheetId = spreadsheetId
+//        let reqURL = "\(self.baseURL)/\(spreadsheetId)/values/\(sheetName)?key=\(apiKey)"
+//        print(reqURL)
+//        guard let requestURL = URL(string: reqURL) else {
+//            throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
+//        }
+//        let (data, _) = try await URLSession.shared.data(from: requestURL)
+//        let decoder = JSONDecoder()
+//        if let jsonString = String(data: data, encoding: .utf8) {
+//            print(jsonString)
+//        }
+//        let spreadSheetResponse = try decoder.decode(SpreadSheetResponse.self, from: data)
+//        print("spreadSheetResponse",spreadSheetResponse)
+//        self.spreadSheetResponse = spreadSheetResponse
+//        self.connectSuccess = true
+//        print("connectSuccess:",connectSuccess)
+//    }
     
     // QR読み取りURLの確認
     func fetchProfileURL(forURL url: String) async {
